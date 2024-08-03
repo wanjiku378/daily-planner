@@ -1,0 +1,30 @@
+
+{% extends 'planners/base.html' %}
+
+{% load static %}
+
+{% block title %}Positivities{% endblock %}
+
+{% block content %}
+    <h1 class="text-center">Morning Positivity</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="container two-grid">
+            <div class="border-container">
+                <h1>INSPIRE YOUR MORNING</h1>
+                {{ form.quote }}                
+            </div>
+            <div class="border-container">
+                <h1>SHOW LOVE TO YOURSELF</h1>
+                {{ form.affirmation }}
+            </div>
+        </div>
+    
+        <p class="text-center">Click the button below to proceed to the daily planner</p>
+        <div class="center-items">
+            <a href="planners/planners/dailyplanner.html"><button class="btn">Daily Planner</button></a>
+        </div>
+
+    </form>
+    
+{% endblock content %}

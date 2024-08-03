@@ -1,0 +1,53 @@
+
+{% extends 'planners/base.html' %}
+
+{% load static %}
+
+{% block title %}Daily Planners{% endblock %}
+
+{% block content %}
+    <main class="container">
+        <h1 class="text-center">Daily Planners</h1>
+        <div class="unequal-two-grid ">
+            <div>
+                <section>
+                    
+                    <div class="side-bar">
+                        <h1 class="text-center">Planners</h1>
+                        <a href="week.html" class="left-margin">Weekly Planner</a><br><hr>
+                        <a href="month.html"  class="left-margin">Monthly Planner</a><br><hr>
+                        <a href="quarter.html"  class="left-margin">Quarterly Planner</a><br><hr>
+                        <a href="annual.html"  class="left-margin">Annual Planner</a><br><hr>
+                    
+                        <a href="weekly-review.html"  class="left-margin">Weekly Review</a><br><hr>
+                        <a href="monthly-review.html"  class="left-margin">Monthly Review</a><br><hr>
+                        <a href="quarterly-review.html"  class="left-margin">Quarterly Review</a><br><hr>
+                        <a href="annual-review.html"  class="left-margin">Annual Review</a> <br>  <hr>      
+                    </div>
+            </section>
+            </div>
+
+            <div>
+                    
+                <input type="text" placeholder="Search planners" class="container home-input">
+                <h1 class="container">Week 1 of January</h1>
+                {% for dailyplanner in dailyplanners %}
+                    <a href="{% url 'dailyplanner' dailyplanner.id %}">
+                        <div class="shaped-container container">
+                            <p>{{ dailyplanner.quote }}</p>
+                            <small>{{ dailyplanner.date_created }}</small>
+                        </div>
+                    </a>
+                {% empty %}
+                    <p>No today's plans posted</p>
+                {% endfor %}
+                
+                
+                <a href="{% url 'add_plan'%}">
+                    <button class="home-btn">+</button>
+                </a>
+            </div>
+        </div>
+
+    </main>
+{% endblock content %}

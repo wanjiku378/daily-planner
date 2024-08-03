@@ -1,0 +1,173 @@
+:root{
+    --primary-color: rgb(3, 192, 255);
+    --text-primary-color: black;
+    --text-secondary-color: white;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5{
+    color: var(--primary-color)
+}
+
+.body-container{
+    margin: 0 auto;
+}
+
+a{
+    color: var(--text-primary-color);
+    text-decoration: none;
+}
+
+small{
+    font-style: italic;
+}
+
+textarea{
+    padding: 10px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color)
+}
+
+
+.center-h1{
+    text-align: center;
+}
+
+
+
+.container{
+    margin-left: 50px;
+    margin-right: 50px
+}
+.left-margin{
+    margin-left: 30px
+}
+
+.unequal-two-grid{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 50px;
+}
+.two-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+.three-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+.four-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+.shaped-container{
+    width: 500px;
+    border-radius: 10px;
+    padding: 7px 20px;
+    box-shadow: 1px 5px 15px rgba(3, 192, 255, 0.2);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.border-container{
+    box-shadow: 1px 1px 15px rgba(3, 192, 255, 0.2);
+    padding: 10px 10px 20px 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.side-bar{
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-shadow: 1px 5px 15px rgba(3, 192, 255, 0.2);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+.center-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.planner-input{
+    width: 230px;
+    padding: 10px;
+    border-radius:5px;
+    border: 2px solid var(--primary-color)
+}
+.btn{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: var(--text-secondary-color)
+}
+
+
+.home-input{
+    width: 500px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color)
+}
+
+.home-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--text-secondary-color);
+    border: none;
+    position: fixed;
+    right: 300px;
+    bottom: 20px;
+    box-shadow: 1px 5px 15px rgba(3, 192, 255, 0.5);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.todo-container{
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid var(--text-primary-color);
+}
+.todo-input{
+    width: 400px;
+    padding: 10px;
+    border-radius:5px;
+    border: 2px solid var(--primary-color);
+}
+
+.birthday-input{
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
