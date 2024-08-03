@@ -1,0 +1,45 @@
+{% extends 'planner/base.html' %}
+
+{% load static %}
+
+{% block title %}Daily Planners{% endblock %}
+
+{% block content %}
+    <div class="planners-grid container">
+        <div>
+            <div class="flex-block side-bar">
+                <h1 class="center-text">Planners</h1>
+                <a href="week-planners.html" class="border-line">Weekly Planner</a>
+                <a href="month-planners.html" class="border-line">Monthly Planner</a>
+                <a href="quarter-planners.html" class="border-line">Quarterly Planner</a>
+                <a href="annual-planners.html" class="border-line">Annual Planner</a>
+            
+                <a href="week-review.html" class="border-line">Weekly Review</a>
+                <a href="month-review.html" class="border-line">Monthly Review</a>
+                <a href="quarter-review.html" class="border-line">Quarterly Review</a>
+                <a href="annual-review.html" class="border-line">Annual Review</a>    
+            </div>
+        </div>
+
+        <div class="margin-left">
+            <h1>Daily Planners</h1>
+            <input class="planners-input" type="text" placeholder="Search for daily planners">
+            <h2>Week 1 of January</h2>
+            {% for dailyplanner in dailyplanners %}
+                <a href="{% url 'dailyplanner' dailyplanner.id %}">
+                    <div class="shapped-container">
+                        <p>{{ dailyplanner.quote }}</p>
+                        <small style="font-style:italic">{{ dailyplanner.date_created }}</small>
+                    </div>
+                </a>
+            {% empty %}
+                <p>Click the plus button to plan your day</p>
+            {% endfor %}
+            
+            <a href="{% url 'positivity' %}">
+                <button class="home-btn">+</button>
+            </a>      
+        </div>
+
+    </div>
+{% endblock content %}
