@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+    
+
+    <div class="planners-grid container">
+        <div>
+            <div class="side-bar flex-block">
+                <h1 class="center-text">List</h1>
+                <a href="#sleep" class="border-line">Sleeping Time</a>
+                <a href="#reminder" class="border-line">Reminder</a>
+                <a href="#priorities" class="border-line">Priorities</a>
+                <a href="#todo" class="border-line">To-do's</a>
+                <a href="#meal" class="border-line">Meal Tracker</a>
+                <a href="#water" class="border-line">Water Intake</a>
+                <a href="#exercise" class="border-line">Exercise</a>
+                <a href="#money" class="border-line">Money Tracker</a>
+                <a href="#grateful" class="border-line">5 Things I'm grateful for</a>
+                <a href="#tomorrow" class="border-line">Tomorrow's to-do's</a>
+                <a href="#journal" class="border-line">Journal</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="center-text">
+                <h1>Daily Planner</h1>
+                <h2>Today's Quote: Happy and excited</h2>
+                <h2>Today's Affirmation: I can do all things through Christ</h2>
+                <h3>Monday, June 4 2024</h3>
+            </div>
+
+            <section class="sleep-section" id="sleep">
+                <div class="border-container">
+                     <h1>HOURS OF SLEEP</h1>
+                     <form action="">
+
+                        <div class="flex">
+                            <label for="">Time Slept: </label><br>
+                            <textarea name="" id="" rows="1" cols="50"></textarea><br>
+                        </div><br>
+                        
+                        <div class="flex">
+                            <label for="">Waking up:</label>
+                            <textarea name="" id="" rows="1" cols="50"></textarea>
+                        </div><br>
+
+                        <div class="flex">
+                            <label for="">Hours Slept: </label>
+                            <textarea name="" id="" rows="1" cols="50"></textarea>
+                        </div>
+                        
+                     </form>
+                </div>
+             </section>
+         
+             <section class="top-activities-section">
+                 <div class="two-grid">
+                     <div class="border-container" id="reminder">
+                         <h1>REMINDER TO:</h1>
+                         <input class="planner-input" type="text" placeholder="Remember to...">
+                         <button class="btn">Add</button>
+                     </div>
+                     <div class="border-container" id="priorities">
+                         <h1>3 TODAY'S PRIORITIES</h1>
+                         <input class="planner-input" type="text" placeholder="I purpose to...">
+                         <button class="btn">Add</button>
+                     </div>
+                 </div>
+             </section>
+         
+             <section class="todo-section" id="todo">
+                <div class="border-container">
+                    <h1>TODAY'S TO-DO LIST</h1>
+                    <input class="todo-input" type="text" placeholder="Write your to do here...">
+                    <button class="btn">ADD</button>
+                    <div class="three-grid">
+                    <div class="center-text todo-container">
+                        <p>Total</p>
+                        <h3>10</h1>
+                    </div>
+                    <div class="center-text todo-container">
+                        <p>Completed</p>
+                        <h3>3</h3>
+                    </div>
+                    <div class="center-text todo-container">
+                        <p>Uncompleted</p>
+                        <h3>7</h3>
+                    </div>
+                    </div>
+                    
+                    <div class="flex">
+                        <ul>
+                            <li>Walk</li>
+                        </ul>
+                        <a href="" class="margin-left"><button class="btn">Description</button></a>
+                        <a href="" class="margin-left"><button class="btn">Delete</button></a>
+                    </div>
+                    
+                     
+                </div>
+             </section>
+         
+             <section class="health-section">
+                 <div class="two-grid">
+                     <div class="border-container" id="meal">
+                         <h1>MEAL TRACKER</h1>
+                         <form action="">
+                            <div class="flex">
+                                <label for="">BreakFast: </label><br>
+                                <textarea name="" id="" rows="1" cols="30"></textarea><br>
+                            </div><br>
+                            
+                            <div class="flex">
+                                <label for="">Lunch:</label>
+                                <textarea name="" id="" rows="1" cols="30"></textarea>
+                            </div><br>
+    
+                            <div class="flex">
+                                <label for="">Dinner:</label>
+                                <textarea name="" id="" rows="1" cols="30"></textarea>
+                            </div><br>
+
+                            <div class="flex">
+                                <label for="">Snacks:</label>
+                                <textarea name="" id="" rows="1" cols="30"></textarea>
+                            </div>
+                         </form>
+                     </div>
+                     <div class="border-container" id="water">
+                         <h1>WATER INTAKE</h1>
+                         <p>Glass 1</p>
+                         <p>Glass 2</p>
+                         <p>Glass 3</p>
+                         <p>Glass 4</p>
+                         <p>Glass 5</p>
+                     </div>
+                 </div>
+             </section>
+         
+             <section class="habit-section">
+                <div class="two-grid">
+                    <div class="border-container" id="exercise">
+                        <h1>EXERCISE</h1>
+                        <form action="">
+                            <div class="flex">
+                                <label for="">Exercise type: </label><br>
+                                <textarea name="" id="" rows="1" cols="25"></textarea><br>
+                            </div><br>
+                            
+                            <div class="flex">
+                                <label for="">Total minutes:</label>
+                                <textarea name="" id="" rows="1" cols="25"></textarea>
+                            </div><br>
+    
+                            <div class="flex">
+                                <label for="">Total minutes:</label>
+                                <textarea name="" id="" rows="1" cols="25"></textarea>
+                            </div>
+                        </form>
+                    </div>
+   
+                    <div class="border-container" id="money">
+                       <h1>MONEY TRACKER</h1>
+                       <form action="">
+                        <div class="flex">
+                            <label for="">Money In: </label><br>
+                            <textarea name="" id="" rows="1" cols="30"></textarea><br>
+                        </div><br>
+                        
+                        <div class="flex">
+                            <label for="">From:</label>
+                            <textarea name="" id="" rows="1" cols="30"></textarea>
+                        </div><br>
+
+                        <div class="flex">
+                            <label for="">Money Out:</label>
+                            <textarea name="" id="" rows="1" cols="30"></textarea>
+                        </div><br>
+
+                        <div class="flex">
+                            <label for="">For:</label>
+                            <textarea name="" id="" rows="1" cols="30"></textarea>
+                        </div>
+                       </form>
+                   </div>
+                </div>
+
+             </section>
+         
+            
+             <section class="analysis-section">
+                 <div class="two-grid">
+                     <div class="border-container" id="grateful">
+                         <h1>5 THINGS I'M GRATEFUL FOR:</h1>
+                         <input class="planner-input" type="text" placeholder="I'm grateful for...">
+                         <button class="btn">Add</button>
+                     </div>
+                     <div class="border-container" id="tomorrow">
+                         <h1>TOMORROW'S ACTIVITIES</h1>
+                         <input class="planner-input" type="text" placeholder="I plan on...">
+                         <button class="btn">Add</button>
+                     </div>
+                 </div>
+             </section>
+         
+             <section class="journal-section">
+                 <div class="border-container" id="journal">
+                     <h1>JOURNAL YOUR DAY</h1>
+                     <textarea name="" id="" rows="10" cols="100" placeholder="How was your day?"></textarea>
+                 </div>
+             </section>
+             
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
